@@ -1,4 +1,4 @@
-1- Decidir que ideia fazer.
+1- Decidir que ideia fazer. - TUDO 
 
 2- Ajeitar o jquery dependendo da ideia que escolher.
 
