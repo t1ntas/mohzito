@@ -1,0 +1,13 @@
+1- Decidir que ideia fazer.
+
+2- Ajeitar o jquery dependendo da ideia que escolher.
+
+2.1- Criar nova pagina com novos eventos do "tens a certeza?"
+
+2.2- Jquery para essa pagina, identico ao anterior antes feito.
+
+2.3- Depois mandar para uma nova pagina com o "timer de tempo juntos".
+
+3- Pagina do "tens a certeza?" com alert com texto.
+
+4- Pagina "timer de tempo juntos" com alert.
