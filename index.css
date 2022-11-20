@@ -3,6 +3,10 @@ body {
     color: white;
 }
 
+#main{
+    margin-left: 400px;
+    margin-right: 400px;
+}
 h2{
     text-align: center;
     justify-content: center;
