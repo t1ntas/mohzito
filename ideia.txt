@@ -27,6 +27,10 @@ JUNTAR AS DUAS IDEIAS!!!
 
 juntar o ponto 1 e 2. 
 
+  ^
+  |
+FEITO
+
 Pagina inicial clica no sim manda para outra pagina da pergunta "tens a certeza?".
 O btnnao continua e o sim vai mostrar um alert e mandar para uma outra pagina com o "timer de tempo juntos".
 

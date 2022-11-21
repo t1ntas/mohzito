@@ -1,10 +1,10 @@
-1- Decidir que ideia fazer. - TUDO 
+1- Decidir que ideia fazer. - FEITO 
 
-2- Ajeitar o jquery dependendo da ideia que escolher.
+2- Ajeitar o jquery dependendo da ideia que escolher. - FEITO 
 
-2.1- Criar nova pagina com novos eventos do "tens a certeza?"
+2.1- Criar nova pagina com novos eventos do "tens a certeza?".-  FEITO
 
-2.2- Jquery para essa pagina, identico ao anterior antes feito.
+2.2- Jquery para essa pagina, identico ao anterior antes feito. - FEITO
 
 2.3- Depois mandar para uma nova pagina com o "timer de tempo juntos".
 
