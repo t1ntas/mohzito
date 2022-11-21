@@ -2,4 +2,31 @@ Ideia inicial
 Ao inves do gostar de mim primeiro vai aparecer:
 
 ama? => sim e nao 
-\
+
+Nao -> entra em loop e a unica opcao é sim!
+
+sim -> tens a certeza? 
+        |
+        v
+Entra em loop se for sim, e se for nao mostra a mensagem alert.(Ti amu)
+
+---------------------------------------------------------------------------------
+
+Nova ideia:
+
+-> Manter o botao "nao" a nao fazer nada e a andar de um lado para o outro
+
+-> 2 hipoteses:
+
+1- Botao sim mandar para outra pagina e fazer a pergunta de "tens a certeza?"
+
+2- Mostrar um alert a dizer amo tu e criar uma outra pagina "timer de tempo juntos"
+
+
+JUNTAR AS DUAS IDEIAS!!!
+
+juntar o ponto 1 e 2. 
+
+Pagina inicial clica no sim manda para outra pagina da pergunta "tens a certeza?".
+O btnnao continua e o sim vai mostrar um alert e mandar para uma outra pagina com o "timer de tempo juntos".
+
