@@ -37,9 +37,17 @@
     });
 
     function change() {
-        var i = Math.floor(Math.random()*500)+1;
-        var j = Math.floor(Math.random()*100)+1;
+        var i = 2;
+        var j = 2;
+        
+        while(i < 300 || i > 600){
+            i = Math.floor(Math.random()*500)+1;
+            j = Math.floor(Math.random()*500)+1;
+        }
+
         $("#move").css({top: j+'px', left:    i+'px'});
+        console.log(j);
+        console.log(i);
     }
 </script>
 </body>
