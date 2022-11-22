@@ -1,6 +1,6 @@
 body {
     background-color: pink;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 #gif {
@@ -16,7 +16,7 @@ body {
 h2{
     text-align: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: 60px;
 }
 p {
     font-size: 30px;
@@ -24,12 +24,22 @@ p {
 }
 
 button {
-
-    background-color: #ff3e3e;
-    color: white;
-    font-size: 15px;
-    height: 30px;
-    width: 100px;
+    font-family: inherit;
+	font-size: 20px;
+	font-weight: 100;
+	line-height: inherit;
+	cursor: pointer;
+	min-width: 10%;
+	height: auto;
+	padding: 0.65rem 1.25rem;
+	border: none;
+	outline: none;
+	border-radius: 5rem;
+	color: white;
+	background: rgb(72, 188, 234);
+	box-shadow:skyblue;
+	text-transform: capitalize;
+	text-rendering: optimizeLegibility;
     position: absolute;
 }
 
@@ -58,7 +68,7 @@ button {
     h2 {
         justify-content: center;
         align-items: center;
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 
@@ -90,6 +100,9 @@ button {
     h2 {
         justify-content: center;
         align-items: center;
+        font-size: 40px;
+    }
+    button{
         font-size: 40px;
     }
 }
