@@ -40,7 +40,7 @@ button {
 	box-shadow:skyblue;
 	text-transform: capitalize;
 	text-rendering: optimizeLegibility;
-    position: relative;
+    position: absolute;
 }
 
 .hidden {
