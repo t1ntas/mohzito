@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="ndex.css">
   <link rel="shortcut icon" href="./img/urso.ico.ico" type="image/x-icon">
   <script src="https://code.jquery.com/jquery-3.6.1.js" 
   integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
   crossorigin="anonymous"></script>
-  <title>Document</title>
+  <title>Timer</title>
 </head>
 <body>
   
@@ -17,35 +17,26 @@
 
   <script>
 
-    //https://guwii.com/bytes/count-date-time-javascript/
-
-
-    var countUpDate = new Date("July 23, 2022 20:30:00").getTime();
+      var countUpDate = new Date("July 23, 2022 20:30:00").getTime();
     
-    // +1 segundo
-    var x = setInterval(function() {
+      // +1 segundo
+      var x = setInterval(function() {
     
       // Data atual
       var now = new Date().getTime();
-      
-      
-      //var distance1 = now / countUpDate + 3;
 
       var distance = now - countUpDate;
 
+      //var years = Math.floor(distance /(1000 * 60 * 60 * 60 * 60 * 24))
       var months = Math.floor(distance / (1000 * 60 * 60 * 60 * 24) * 2);
       var days = Math.floor(distance / (1000 * 60 * 60 * 24) / 30);
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
-      document.getElementById("demo").innerHTML = months + " Meses " + days + " Dias " + hours + " Horas "
+      document.getElementById("demo").innerHTML =/*years + " Anos "*/ months + " Meses " + days + " Dias " + hours + " Horas "
       + minutes + " Minutos " + seconds + " Segundos ";
       
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "SURPRESA!";
-      }
     }, 1000);
     </script>
 </body>
