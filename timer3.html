@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Lato">
+	</head>
+	<body>
+		<div id="context"></div>
+		<div id="message"></div>
+		<div id="object"></div>
+		
+		<script>
+		    function dateDifference(actualDate, value) {
+            // Calculate time between two dates:
+            const date1 = actualDate; // the date you already commented/ posted
+            const date2 = new Date(); // today
+            let r = {}; // object for clarity
+            let message;
+            const diffInSeconds = Math.abs(date2 - date1) / 1000;
+            const days = Math.floor(diffInSeconds / 60 / 60 / 24);
+            const hours = Math.floor(diffInSeconds / 60 / 60 % 24);
+            const minutes = Math.floor(diffInSeconds / 60 % 60);
+            const seconds = Math.floor(diffInSeconds % 60);
+            const milliseconds =
+            Math.round((diffInSeconds - Math.floor( diffInSeconds)) * 1000);
+            const months = Math.floor(days / 31);
+            const years = Math.floor(months / 12);
+            
+            /* Below object is useful if you want to show difference in detailed context */
+            // if you want to return an object instead of a message
+            r = {
+            years: years,
+            months: months,
+            days: days,
+            hours: hours,
+            minutes: minutes,
+            seconds: seconds,
+            milliseconds: milliseconds
+            };
+            
+                /* If you want to display difference either in any one of the data in above object 'r'.*/
+                
+                // check if difference is in years or months
+                if (years === 0 && months === 0) {
+                // show in days if no years / months
+                    if (days > 0) {
+                        if (days === 1) {
+                        message = days + ' day';
+                        } else { 
+                            message = days + ' days ' ;
+                        }
+                    } else if (hours > 0) {
+                            
+                        // show in hours if no years / months / days
+                        if (hours === 1) {
+                            message = hours + ' hour';
+                        } else {
+                            message = hours + ' hours'; 
+                        }
+                    } else {
+                    // show in minutes if no years / months / days / hours
+                        if (minutes === 1) {
+                        message = minutes + ' minute';
+                        } else { 
+                            message = minutes + ' minutes ' ; 
+                         }
+                    }
+                } else if (years === 0 && months > 0) {
+                    // show in months if no years
+                    if (months === 1) {
+                        message = months + ' month';
+                    } else {
+                            message = months + ' months ' ;
+                            
+                    }
+                } else if (years > 0) {
+                    // show in years if years exist
+                    if (years === 1) {
+                    message = years + ' year';
+                    } else {
+                        message = years + ' years ' ;
+                        
+                    }
+                }
+                
+                // To display either an object or a message in the view
+                if (value === true) {
+                    return r;
+                }
+                return message;
+            }
+            
+            function contentUpdate() {
+                // play with the postedDate as you  wish to check this function
+            const postedDate = new Date('July 23 2022 12:08');
+            
+            // context
+            document.getElementById('context');
+            
+            // result in the form of a message
+            const message = dateDifference(postedDate, false);
+            document.getElementById('message');
+            
+            // result in the form of a detailed object
+            const objectDate = dateDifference(postedDate, true);
+            document.getElementById('object').innerHTML = `<p>Difference between now and the posted time of user X comment/post in detail is "<strong>${objectDate.years}</strong> years, <strong>${objectDate.months}</strong> months, <strong>${objectDate.days}</strong> days, <strong>${objectDate.hours}</strong> hours, <strong>${objectDate.minutes}</strong> minutes, <strong>${objectDate.seconds}</strong> seconds <strong></p>`;
+            }
+            
+            
+            // to update content every one second
+            setInterval(contentUpdate, 1000);
+            
+            // to update the content for the first time
+            contentUpdate();
+		</script>
+	</body>
+</html>

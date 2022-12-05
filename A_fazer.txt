@@ -6,8 +6,8 @@
 
 2.2- Jquery para essa pagina, identico ao anterior antes feito. - FEITO
 
-2.3- Depois mandar para uma nova pagina com o "timer de tempo juntos".
+2.3- Depois mandar para uma nova pagina com o "timer de tempo juntos". - QUASE FEITO
 
-3- Pagina do "tens a certeza?" com alert com texto.
+3- Pagina do "tens a certeza?" com alert com texto. - FEITO
 
-4- Pagina "timer de tempo juntos" com alert.
+4- Pagina "timer de tempo juntos" com alert. - Nao sei que alert é, mas foi uma boa ideia.
