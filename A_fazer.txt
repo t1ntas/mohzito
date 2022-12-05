@@ -10,4 +10,4 @@
 
 3- Pagina do "tens a certeza?" com alert com texto. - FEITO
 
-4- Pagina "timer de tempo juntos" com alert. - Nao sei que alert é, mas foi uma boa ideia.
+4- Pagina "timer de tempo juntos" com alert. - Nao sei que alert é, mas foi uma boa ideia. - FEITO, sem o alert mas pronto

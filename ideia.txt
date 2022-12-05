@@ -34,3 +34,8 @@ FEITO
 Pagina inicial clica no sim manda para outra pagina da pergunta "tens a certeza?".
 O btnnao continua e o sim vai mostrar um alert e mandar para uma outra pagina com o "timer de tempo juntos". < - resolvido
 
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Dias = 30 dar reset e adicionar 1 mes 
+
+mes chegar a 12 adicionar 1 ano

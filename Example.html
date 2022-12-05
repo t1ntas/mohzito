@@ -92,7 +92,7 @@
             
             function contentUpdate() {
                 // play with the postedDate as you  wish to check this function
-            const postedDate = new Date('July 23 2022 12:08');
+            const postedDate = new Date('July 23 2022 23:30:00');
             
             // context
             document.getElementById('context');
@@ -103,7 +103,7 @@
             
             // result in the form of a detailed object
             const objectDate = dateDifference(postedDate, true);
-            document.getElementById('object').innerHTML = `<p>Difference between now and the posted time of user X comment/post in detail is "<strong>${objectDate.years}</strong> years, <strong>${objectDate.months}</strong> months, <strong>${objectDate.days}</strong> days, <strong>${objectDate.hours}</strong> hours, <strong>${objectDate.minutes}</strong> minutes, <strong>${objectDate.seconds}</strong> seconds <strong></p>`;
+            document.getElementById('object').innerHTML = `<p>${objectDate.years}</strong> years, <strong>${objectDate.months}</strong> months, <strong>${objectDate.days}</strong> days, <strong>${objectDate.hours}</strong> hours, <strong>${objectDate.minutes}</strong> minutes, <strong>${objectDate.seconds}</strong> seconds <strong></p>`;
             }
             
             
