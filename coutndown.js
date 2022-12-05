@@ -1,5 +1,6 @@
 var countDownDate = new Date("Dec 24, 2022 00:00:00").getTime();
     
+
     // +1 segundo
     var x = setInterval(function() {
     

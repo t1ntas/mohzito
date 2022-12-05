@@ -14,6 +14,7 @@ $("#move").hover(function(){
 });
 
 function change() {
+    
     var i = 2;
     var j = 2;
 

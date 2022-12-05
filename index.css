@@ -7,17 +7,20 @@ body {
     width: 50%;
     height: 50%;
 }
+
 #main{
     justify-content: center;
     align-items: center;
     /*margin-left: 300px;
     margin-right: 300px;*/
 }
+
 h2{
     text-align: center;
     justify-content: center;
     font-size: 60px;
 }
+
 p {
     font-size: 30px;
     font-weight: bold;
