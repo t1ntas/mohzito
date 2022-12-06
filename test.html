@@ -1,0 +1,71 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+    <meta charset= "utf-8">
+    <title>count up</title>
+    </head>
+    <body>
+    <h1>Since When: <input id="whenTxt" type="text">
+    <button id="sinceBtn" type="text">Display</button></h1>
+    <div id="sinceText" style="margin-left:2em">&nbsp;</div>
+    
+    <script>
+
+    function monthLengths(y){
+        var y=y || new Date().getFullYear();
+        var feb= y%4== 0 && (y%100 || y%400== 0)? 29: 28;
+        return [31, feb, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    }
+
+    function ymdBetween(fromDay, toDay){
+        var to, from= new Date(fromDay);
+        if(!toDay && toDay!== 0) to= new Date();
+        else to= new Date(toDay);
+
+        var A= [], years= 0, months= 0, days= 0, 
+        fromYear= from.getFullYear(), 
+        fromMonth= from.getMonth(), 
+        fromDate= from.getDate(), 
+        toYear= to.getFullYear(), 
+        toMonth= to.getMonth(), 
+        toDate= to.getDate(),
+        monthdays= monthLengths(toYear),
+        years= toYear-fromYear;
+
+        if(years){
+            if(fromMonth>toMonth || (fromMonth== toMonth && fromDate>toDate)) years-= 1;
+            if(years) A[0]= (years +' year');
+        }
+        if(fromMonth>toMonth || (fromMonth=== toMonth && fromDate>toDate)){
+            months= 12-fromMonth+toMonth;
+        }
+        else{
+            months= toMonth-fromMonth;
+        }
+        if(fromDate>toDate)--months;
+        if(months) A[A.length]= (months +' month');
+
+        if(fromDate>toDate){
+            var lastmonthlength= monthdays[toMonth-1];
+            if(lastmonthlength< fromDate)fromDate=lastmonthlength;
+            days= lastmonthlength-fromDate+toDate;
+        }
+        else days= toDate-fromDate;
+        if(days) A[A.length]= (days+' day');
+
+        return A.map(function(itm){
+            return parseInt(itm, 10)>1? itm+'s': itm;
+        }).join(', ');
+    }
+    function printSince(){
+        var str= document.getElementById('whenTxt').value,
+        s=ymdBetween(str);
+        alert(s)
+        document.getElementById('sinceText').innerHTML='<h2>'+s+'</h2>';
+    }
+    window.onload=function(){
+        document.getElementById('sinceBtn').onclick=printSince;
+    }
+    </script>
+    </body>
+    </html>
