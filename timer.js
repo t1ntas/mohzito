@@ -7,28 +7,29 @@ window.onload = function() {
         countFrom = new Date(countFrom),
         timeDifference = (now - countFrom);
 
-      //------------------------------------------------------------
-        
-      //------------------------------------------------------------
-
     var secondsInADay = 60 * 60 * 1000 * 24,
         secondsInAHour = 60 * 60 * 1000;
-      
-    /*135 ->*/ days = Math.floor(timeDifference / (secondsInADay) * 1);
-   
-    
-    
-    years = Math.floor(days / 365);
+
+        var s = countFrom.getFullYear(); // ano atual 
+        
+        if ((s % 4 == 0) && ((s % 100 != 0) || (s % 400 == 0))){ // se é bissexto ou comum 
+          div = 366; // dias se for bissexto
+        } else {
+          div = 365; // dias se for comum
+        }
+
+    days = Math.floor(timeDifference / (secondsInADay) * 1); //numero de dias -> 135/136
+    years = Math.floor(days / div); // indica os anos pelos os dias que ja passaram e pelo resto calculado na var s
     if (years > 1)
         {
-          days = days - (years * 365);
+          days = days - (years * div);
         }
-    var test2 = months_days(years);
-    // meses nao dao, pedro: supostamente é cirar outra variavel.
-    //preciso os meses para calcular 
-    months = Math.floor(days / test2[months - 1]);
+
+    var test2 = months_days(years); //vai buscar a array 
+    var index = countFrom.getMonth(); // indica o mes
+    months = Math.floor(days / test2[index]);
     var test = months_days(years);
-    rest_days = Math.floor(days % test[months - 1]);
+    rest_days = Math.floor(days % test[index]);
     hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
     mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
     secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
@@ -46,6 +47,6 @@ window.onload = function() {
   }
   function months_days(y){
     var y=y || new Date().getFullYear();
-    var feb= y%4== 0 && (y%100 || y%400== 0)? 29: 28;
+    var feb= y % 4 == 0 && (y % 100 || y % 400== 0) ? 29: 28;
     return [31, feb, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 }
