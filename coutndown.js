@@ -1,4 +1,4 @@
-var countDownDate = new Date("Dec 24, 2022 00:00:00").getTime();
+var countDownDate = new Date("Dec 07, 2022 17:50:50").getTime();
     
 
     // +1 segundo
@@ -17,8 +17,19 @@ var countDownDate = new Date("Dec 24, 2022 00:00:00").getTime();
       document.getElementById("demo").innerHTML = days + " Dias " + hours + " Horas "
       + minutes + " Minutos " + seconds + " Segundos ";
       
-      if (distance < 0) {
+      //demo - contador que vai aparecer surpresa
+
+      //prendaa  botao hidden
+
+      if (distance <= 0) {
         clearInterval(x);
         document.getElementById("demo").innerHTML = "SURPRESA!";
+        $("#prendaa").removeAttr("hidden", "hidden");
+        $("#prendaa").click(function(){
+          alert("Boa escolha....🤔")
+      });
+        $("#prendaa").click(function(){
+          window.location.href="./tens_a_certeza.html"
+              }); 
       }
     }, 1000);
