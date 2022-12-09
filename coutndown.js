@@ -17,7 +17,7 @@ var countDownDate = new Date("Dec 24, 2022 00:00:00").getTime();
       document.getElementById("demo").innerHTML = days + " Dias " + hours + " Horas "
       + minutes + " Minutos " + seconds + " Segundos ";
 
-      if (distance <= 0) {
+      if (distance < 0) {
         clearInterval(x);
         document.getElementById("demo").innerHTML = "SURPRESA!";
         $("#prendaa").removeAttr("hidden", "hidden");
