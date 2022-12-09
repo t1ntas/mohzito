@@ -1,4 +1,4 @@
-var countDownDate = new Date("Dec 07, 2022 17:50:50").getTime();
+var countDownDate = new Date("Dec 24, 2022 00:00:00").getTime();
     
 
     // +1 segundo
@@ -16,10 +16,6 @@ var countDownDate = new Date("Dec 07, 2022 17:50:50").getTime();
         
       document.getElementById("demo").innerHTML = days + " Dias " + hours + " Horas "
       + minutes + " Minutos " + seconds + " Segundos ";
-      
-      //demo - contador que vai aparecer surpresa
-
-      //prendaa  botao hidden
 
       if (distance <= 0) {
         clearInterval(x);
