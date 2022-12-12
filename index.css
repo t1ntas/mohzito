@@ -6,6 +6,10 @@ body {
     width: 50%;
     height: 50%;
 }
+#giff {
+    width: auto;
+    height: auto;
+}
 #main{
     justify-content: center;
     align-items: center;

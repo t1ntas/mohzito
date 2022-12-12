@@ -11,3 +11,11 @@
 3- Pagina do "tens a certeza?" com alert com texto. - FEITO
 
 4- Pagina "timer de tempo juntos" com alert. - Nao sei que alert é, mas foi uma boa ideia. - FEITO, sem o alert mas pronto
+
+DONE!
+
+TO DO:
+
+5 - Portofolio fotos - Quando chega á pagina do timer.html ira ter um botao (Portofolio) que so conseguirao aceder com password.
+
+5.1 - Com todas as fotos colocadas e o ponto 5 resolvido, colocar animacao da foto ficar maior e apresentar uma descricao.

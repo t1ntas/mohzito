@@ -49,3 +49,5 @@ Countdown chega a 0 Mostra mensagem Surpresa
  - Mostra a mensagem "Surpresa" com link no mesmo botao/link
  - Mostra a mensagem "Surpresa" e outra coisa com o link
  - Mostra a mensagme "Surpresa" e quando se clica no botao muda o texto para "Ir para a surpresa" e manda para o index.html
+
+ ALL DONE - incoming new ideias! 
