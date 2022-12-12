@@ -19,6 +19,6 @@ var countDownDate = new Date("Dec 12, 2022 13:45:00").getTime();
         
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "PRENDINHA!";
+        document.getElementById("demo").innerHTML = "JA CA TENHO O POLVO CHINES🐙!";
       }
     }, 1000);
