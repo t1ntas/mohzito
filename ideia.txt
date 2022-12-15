@@ -51,3 +51,7 @@ Countdown chega a 0 Mostra mensagem Surpresa
  - Mostra a mensagme "Surpresa" e quando se clica no botao muda o texto para "Ir para a surpresa" e manda para o index.html
 
  ALL DONE - incoming new ideias! 
+
+ links : 
+ - https://hstechdocs.helpsystems.com/manuals/globalscape/archive/csb4/csbCreate_a_password_protected_link.htm
+ - https://codigosimples.net/2015/04/01/criando-validacao-de-confirmacao-de-senha-com-html-5-e-javascript/

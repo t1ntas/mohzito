@@ -25,7 +25,7 @@ var countDownDate = new Date("Dec 24, 2022 00:00:00").getTime();
           alert("Boa escolha....🤔")
       });
         $("#prendaa").click(function(){
-          window.location.href="./tens_a_certeza.html"
+          window.location.href="./index.html"
               }); 
       }
     }, 1000);

@@ -1,20 +1,25 @@
-/*var password = document.getElementById("password")
-  , correct_password = 'ola';*/
-
-  function onSubmit() {
-    if (document.getElementById("password").value == '1234') {window.location.href="./index.html"; }else{ alert('Palavra-Passe Incorreta');}
+var pass = '1234', 
+  password = document.getElementById("password");
+  
+  function modifyState() {
+    let stateObj = { id: "100" };
+    window.history.replaceState(stateObj,"timer.html", "/timer.html");
 }
-
-
-
-  /*function validatePassword(){
-  if(password.value != correct_password) {
-    confirm_password.setCustomValidity("Senhas diferentes!");
-  } else {
-    confirm_password.setCustomValidity('');
-    window.location.href="./index.html"
+  
+  
+  function validar() {
+    if (document.getElementById("password").value != pass) {
+      alert("Error!");      
+    }  
+    else {
+      alert("Boa");
+      modifyState();
+      window.location.reload(); 
+      window.location.reload(false);
+    }
   }
-}
 
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;*/
+
+  //PARA POSSIVEIS ERROS - USAR !
+  //https://acervolima.com/como-substituir-url-simples-por-link-usando-javascript/
+  //https://acervolima.com/como-modificar-o-url-sem-recarregar-a-pagina-usando-javascript/ e chamar o window.reload();
