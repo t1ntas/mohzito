@@ -1,4 +1,4 @@
-var countDownDate = new Date("Dec 17, 2022 20:37:00").getTime();
+var countDownDate = new Date("Dec 17, 2022 20:40:00").getTime();
     
 
     // +1 segundo
