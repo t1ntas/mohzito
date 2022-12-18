@@ -5,7 +5,7 @@ var frase = 'always' || 'Always',
   
     function modifyState() {
       let stateObj = { id: "100" };
-      window.history.replaceState(stateObj,"timer.html", "/timer.html");
+      window.history.replaceState(stateObj,"timer.html", "/mohzito/portofoliogallery.html");
   }
   
   
