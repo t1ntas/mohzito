@@ -1,7 +1,7 @@
 var frase = 'always', frase2 = 'Always',
     data = '23/07/2022',
-    senha = '749123',
-    nome = document.getElementById("nome").value;
+    senha = '749123';
+    //nome = document.getElementById("nome").value;
   
     function modifyState() {
       let stateObj = { id: "100" };
@@ -10,7 +10,8 @@ var frase = 'always', frase2 = 'Always',
   
   function validar() {
     if (((document.getElementById("frase").value == frase) || (document.getElementById("frase").value == frase2) ) & (document.getElementById("data").value == data) & (document.getElementById("senha").value == senha)) {
-      alert("Boa, bem-vindo(a), " + nome);
+      alert("Boa, bem-vindo(a), " + document.getElementById("nome").value);
+      console.log(nome);
       modifyState();
       window.location.reload();
       window.location.reload(false);      
