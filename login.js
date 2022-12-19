@@ -1,4 +1,4 @@
-var frase = 'always', frase = 'Always',
+var frase = 'always', frase2 = 'Always',
     data = '23/07/2022',
     senha = '749123',
     nome = document.getElementById("nome").value;
@@ -9,7 +9,7 @@ var frase = 'always', frase = 'Always',
   }
   
   function validar() {
-    if ((document.getElementById("frase").value == frase) & (document.getElementById("data").value == data) & (document.getElementById("senha").value == senha)) {
+    if (((document.getElementById("frase").value == frase) || (document.getElementById("frase").value == frase2) ) & (document.getElementById("data").value == data) & (document.getElementById("senha").value == senha)) {
       alert("Boa, bem-vindo(a), " + nome);
       modifyState();
       window.location.reload();
