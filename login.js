@@ -8,7 +8,6 @@ var frase = 'always', frase = 'Always',
       window.history.replaceState(stateObj,"portofoliogallery.html", "/mohzito/portofoliogallery.html");
   }
   
-  
   function validar() {
     if ((document.getElementById("frase").value == frase) & (document.getElementById("data").value == data) & (document.getElementById("senha").value == senha)) {
       alert("Boa, bem-vindo(a), " + nome);
