@@ -9,7 +9,7 @@ $("#change").click(function(){
             });
 });
 
-$("#move").hover(function(){
+$("#move").click(function(){
     change();
 });
 

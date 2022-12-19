@@ -22,3 +22,6 @@ var frase = 'always', frase2 = 'Always',
   //PARA POSSIVEIS ERROS - USAR !
   //https://acervolima.com/como-substituir-url-simples-por-link-usando-javascript/
   //https://acervolima.com/como-modificar-o-url-sem-recarregar-a-pagina-usando-javascript/ e chamar o window.reload();
+
+
+  //ver cena que ao clicar na foto ela expande (NO TELEMOVEL e no pc caso dê muito trabalho)

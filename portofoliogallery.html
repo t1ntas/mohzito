@@ -9,6 +9,96 @@
     <link rel="shortcut icon" href="./img/urso.ico.ico" type="image/x-icon">
     <script src="portofoliogallery.js"></script>
     <title>Portofólio</title>
+    <style>
+        /*<-----> Modal CSS <----->*/
+
+  #myImg,#myImg2,#myImg3,#myImg4,#myImg5,#myImg6,#myImg7,#myImg8,#myImg9,#myImg10,#myImg11,#myImg12,#myImg13,#myImg14,#myImg15,#myImg16,#myImg17,#myImg18,#myImg19,#myImg20,#myImg21,#myImg22,#myImg23,#myImg24,#myImg25,#myImg26,#myImg27,#myImg28,#myImg29,#myImg30,#myImg31,#myImg32,#myImg33,#myImg34,#myImg35,#myImg36,#myImg37,#myImg38,#myImg39,#myImg40,#myImg41,#myImg42,#myImg43,#myImg44,#myImg45,#myImg46,#myImg47,#myImg48,#myImg49,#myImg50,#myImg51,#myImg52,#myImg53,#myImg54,#myImg55 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg,#myImg2,#myImg3,#myImg4,#myImg5,#myImg6,#myImg7,#myImg8,#myImg9,#myImg10,#myImg11,#myImg12,#myImg13,#myImg14,#myImg15,#myImg16,#myImg17,#myImg18,#myImg19,#myImg20,#myImg21,#myImg22,#myImg23,#myImg24,#myImg25,#myImg26,#myImg27,#myImg28,#myImg29,#myImg30,#myImg31,#myImg32,#myImg33,#myImg34,#myImg35,#myImg36,#myImg37,#myImg38,#myImg39,#myImg40,#myImg41,#myImg42,#myImg43,#myImg44,#myImg45,#myImg46,#myImg47,#myImg48,#myImg49,#myImg50,#myImg51,#myImg52,#myImg53,#myImg54,#myImg55 :hover {opacity: 0.7;}
+
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+    </style>
 </head>
 <body>
     <h2>PORTFOLIO DE NOZES :)</h2>
@@ -24,209 +114,591 @@
     <div class="row">
       <div class="column nature">
         <div class="content">
-          <img src="./img/photos/Ela/Ela.jpg" alt="Ela" style="width:100%">
+          <img id="myImg" src="./img/photos/Ela/Ela.jpg" alt="Ela" style="width:100%">
         </div>
       </div>
       <div class="column nature">
         <div class="content">
-          <img src="./img/photos/Ela/Ela2.jpg" alt="Ela" style="width:100%">
+          <img id="myImg2" src="./img/photos/Ela/Ela2.jpg" alt="Ela" style="width:100%">
         </div>
       </div>
       <div class="column nature">
         <div class="content">
-          <img src="./img/photos/Ela/Ela3.jpg" alt="Ela" style="width:100%">
+          <img id="myImg3" src="./img/photos/Ela/Ela3.jpg" alt="Ela" style="width:100%">
         </div>
       </div>
       <div class="column nature">
         <div class="content">
-          <img src="./img/photos/Ela/Ela4.jpg" alt="Ela" style="width:100%">
+          <img id="myImg4" src="./img/photos/Ela/Ela4.jpg" alt="Ela" style="width:100%">
         </div>
       </div>
       <div class="column nature">
         <div class="content">
-          <img src="./img/photos/Ela/Ela5.jpg" alt="Ela" style="width:100%">
+          <img id="myImg5" src="./img/photos/Ela/Ela5.jpg" alt="Ela" style="width:100%">
         </div>
       </div>
       <div class="column nature">
         <div class="content">
-          <img src="./img/photos/Ela/Ela6.jpg" alt="Ela" style="width:100%">
+          <img id="myImg6" src="./img/photos/Ela/Ela6.jpg" alt="Ela" style="width:100%">
         </div>
       </div>
       <div class="column nature">
         <div class="content">
-          <img src="./img/photos/Ela/Ela7.jpg" alt="Ela" style="width:100%">
+          <img id="myImg7" src="./img/photos/Ela/Ela7.jpg" alt="Ela" style="width:100%">
         </div>
       </div>
       <div class="column nature">
         <div class="content">
-          <img src="./img/photos/Ela/Ela8.jpg" alt="Ela" style="width:100%">
+          <img id="myImg8" src="./img/photos/Ela/Ela11.jpg" alt="Ela" style="width:100%">
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img id="myImg9" src="./img/photos/Ela/Ela9.jpg" alt="Ela" style="width:100%">
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img id="myImg10" src="./img/photos/Ela/Ela10.jpg" alt="Ela" style="width:100%">
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img id="myImg11" src="./img/photos/Ela/Ela8.jpg" alt="Ela" style="width:100%">
         </div>
       </div>
     <!-- Eu -->
       <div class="column cars">
         <div class="content">
-          <img src="./img/photos/Ele/Eu.jpg" alt="Ele" style="width:100%">
+          <img id="myImg12" src="./img/photos/Ele/Eu.jpg" alt="Ele" style="width:100%">
         </div>
       </div>
       <div class="column cars">
         <div class="content">
-          <img src="./img/photos/Ele/Eu2.jpg" alt="Ele" style="width:100%">
+          <img id="myImg13" src="./img/photos/Ele/Eu2.jpg" alt="Ele" style="width:100%">
         </div>
       </div>
       <div class="column cars">
         <div class="content">
-          <img src="./img/photos/Ele/Eu3.jpg" alt="Ele" style="width:100%">
+          <img id="myImg14" src="./img/photos/Ele/Eu3.jpg" alt="Ele" style="width:100%">
         </div>
       </div>
       <div class="column cars">
         <div class="content">
-          <img src="./img/photos/Ele/Eu4.jpg" alt="Ele" style="width:100%">
+          <img id="myImg15" src="./img/photos/Ele/Eu4.jpg" alt="Ele" style="width:100%">
         </div>
       </div>
       <div class="column cars">
         <div class="content">
-          <img src="./img/photos/Ele/Eu5.jpg" alt="Ele" style="width:100%">
+          <img id="myImg16" src="./img/photos/Ele/Eu5.jpg" alt="Ele" style="width:100%">
         </div>
       </div>
       <div class="column cars">
         <div class="content">
-          <img src="./img/photos/Ele/Eu7.jpg" alt="Ele" style="width:100%">
+          <img id="myImg17" src="./img/photos/Ele/Eu6.jpg" alt="Ele" style="width:100%">
         </div>
       </div>
       <div class="column cars">
         <div class="content">
-          <img src="./img/photos/Ele/Eu8.jpg" alt="Ele" style="width:100%">
+          <img id="myImg18" src="./img/photos/Ele/Eu7.jpg" alt="Ele" style="width:100%">
         </div>
       </div>
-      <div class="column Eles">
+      <div class="column cars">
         <div class="content">
-          <img src="./img/photos/Ele/Eu9.jpg" alt="Ele" style="width:100%">
+          <img id="myImg19" src="./img/photos/Ele/Eu8.jpg" alt="Ele" style="width:100%">
         </div>
       </div>
-      <div class="column Eles">
+      <div class="column cars">
         <div class="content">
-          <img src="./img/photos/Ele/Eu10.jpg" alt="Ele" style="width:100%">
+          <img id="myImg20" src="./img/photos/Ele/Eu8.jpg" alt="Ele" style="width:100%">
         </div>
       </div>
-      <div class="column Eles">
+      <div class="column cars">
         <div class="content">
-          <img src="./img/photos/Ele/Eu11.jpg" alt="Ele" style="width:100%">
+          <img id="myImg21" src="./img/photos/Ele/Eu10.jpg" alt="Ele" style="width:100%">
         </div>
       </div>
-      <div class="column Eles">
+      <div class="column cars">
         <div class="content">
-          <img src="./img/photos/Ele/Eu12.jpg" alt="Ele" style="width:100%">
+          <img id="myImg22" src="./img/photos/Ele/Eu11.jpg" alt="Ele" style="width:100%">
         </div>
       </div>
-      <div class="column Eles">
+      <div class="column cars">
         <div class="content">
-          <img src="./img/photos/Ele/Eu13.jpg" alt="Ele" style="width:100%">
+          <img id="myImg23" src="./img/photos/Ele/Eu12.jpg" alt="Ele" style="width:100%">
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+          <img id="myImg24" src="./img/photos/Ele/Eu13.jpg" alt="Ele" style="width:100%">
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+          <img id="myImg25" src="./img/photos/Ele/Eu14.jpg" alt="Ele" style="width:100%">
         </div>
       </div>
       
     <!-- Nós -->
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes.jpg" alt="Nos" style="width:100%">
+          <img id="myImg26" src="./img/photos/Nos/Nozes.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes2.jpg" alt="Nos" style="width:100%">
+          <img id="myImg27" src="./img/photos/Nos/Nozes2.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes4.jpg" alt="Nos" style="width:100%">
+          <img id="myImg28" src="./img/photos/Nos/Nozes4.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes5.jpg" alt="Nos" style="width:100%">
+          <img id="myImg29" src="./img/photos/Nos/Nozes5.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes3.jpg" alt="Nos" style="width:100%">
+          <img id="myImg30" src="./img/photos/Nos/Nozes3.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes6.jpg" alt="Nos" style="width:100%">
+          <img id="myImg31" src="./img/photos/Nos/Nozes6.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes9.jpg" alt="Nos" style="width:100%">
+          <img id="myImg32" src="./img/photos/Nos/Nozes9.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes10.jpg" alt="Nos" style="width:100%">
+          <img id="myImg33" src="./img/photos/Nos/Nozes10.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes11.jpg" alt="Nos" style="width:100%">
+          <img id="myImg34" src="./img/photos/Nos/Nozes11.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes12.jpg" alt="Nos" style="width:100%">
+          <img id="myImg35" src="./img/photos/Nos/Nozes12.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes13.jpg" alt="Nos" style="width:100%">
+          <img id="myImg36" src="./img/photos/Nos/Nozes13.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes14.jpg" alt="Nos" style="width:100%">
+          <img id="myImg37" src="./img/photos/Nos/Nozes14.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes15.jpg" alt="Nos" style="width:100%">
+          <img id="myImg38" src="./img/photos/Nos/Nozes15.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes16.jpg" alt="Nos" style="width:100%">
+          <img id="myImg39" src="./img/photos/Nos/Nozes16.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes17.jpg" alt="Nos" style="width:100%">
+          <img id="myImg40" src="./img/photos/Nos/Nozes17.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes18.jpg" alt="Nos" style="width:100%">
+          <img id="myImg41" src="./img/photos/Nos/Nozes18.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes19.jpg" alt="Nos" style="width:100%">
+          <img id="myImg42" src="./img/photos/Nos/Nozes19.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes20.jpg" alt="Nos" style="width:100%">
+          <img id="myImg43" src="./img/photos/Nos/Nozes20.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <!-- Sempre as ultimas -->
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes7.jpg" alt="Nos" style="width:100%">
+          <img id="myImg44" src="./img/photos/Nos/Nozes7.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
       <div class="column people">
         <div class="content">
-          <img src="./img/photos/Nos/Nozes8.jpg" alt="Nos" style="width:100%">
+          <img id="myImg45" src="./img/photos/Nos/Nozes8.jpg" alt="Nos" style="width:100%">
         </div>
       </div>
+
+      <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
     <!-- END GRID -->
     </div>
+    <!-- Modal Script -->
+    <script>
+      // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg"),
+img2 = document.getElementById("myImg2"),
+img3 = document.getElementById("myImg3"),
+img4 = document.getElementById("myImg4"),
+img5 = document.getElementById("myImg5"),
+img6 = document.getElementById("myImg6"),
+img7 = document.getElementById("myImg7"),
+img8 = document.getElementById("myImg8"),
+img9 = document.getElementById("myImg9"),
+img10 = document.getElementById("myImg10"),
+img11 = document.getElementById("myImg11"),
+img12 = document.getElementById("myImg12"),
+img13 = document.getElementById("myImg13"),
+img14 = document.getElementById("myImg14"),
+img15 = document.getElementById("myImg15"),
+img16 = document.getElementById("myImg16"),
+img17 = document.getElementById("myImg17"),
+img18 = document.getElementById("myImg18"),
+img19 = document.getElementById("myImg19"),
+img20 = document.getElementById("myImg20"),
+img21 = document.getElementById("myImg21"),
+img22 = document.getElementById("myImg22"),
+img23 = document.getElementById("myImg23"),
+img24 = document.getElementById("myImg24"),
+img25 = document.getElementById("myImg25"),
+img26 = document.getElementById("myImg26"),
+img27 = document.getElementById("myImg27"),
+img28 = document.getElementById("myImg28"),
+img29 = document.getElementById("myImg29"),
+img30 = document.getElementById("myImg30"),
+img31 = document.getElementById("myImg31"),
+img32 = document.getElementById("myImg32"),
+img33 = document.getElementById("myImg33"),
+img34 = document.getElementById("myImg34"),
+img35 = document.getElementById("myImg35"),
+img36 = document.getElementById("myImg36"),
+img37 = document.getElementById("myImg37"),
+img38 = document.getElementById("myImg38"),
+img39 = document.getElementById("myImg39"),
+img40 = document.getElementById("myImg40"),
+img41 = document.getElementById("myImg41"),
+img42 = document.getElementById("myImg42"),
+img43 = document.getElementById("myImg43"),
+img44 = document.getElementById("myImg44"),
+img45 = document.getElementById("myImg45");
+/*img46 = document.getElementById("myImg46"),
+img47 = document.getElementById("myImg47"),
+img48 = document.getElementById("myImg48"),
+img49 = document.getElementById("myImg49"),
+img50 = document.getElementById("myImg50"),
+img51 = document.getElementById("myImg51"),
+img52 = document.getElementById("myImg52"),
+img53 = document.getElementById("myImg53"),
+img54 = document.getElementById("myImg54"),
+img55 = document.getElementById("myImg55");*/
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img2.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img3.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img4.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img5.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img6.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img7.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img8.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img9.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img10.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img11.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img12.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img13.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img14.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img15.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img16.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img17.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img18.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img19.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img20.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img21.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img22.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img23.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img24.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img25.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img26.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img27.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img28.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img29.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img30.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img31.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img32.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img33.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img34.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img35.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img36.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img37.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img38.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img39.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img40.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img41.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img42.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img43.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img44.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img45.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+/*img46.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img47.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img48.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img49.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img50.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img51.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img52.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img53.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img54.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img56.onclick = function(){
+
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+*/
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// carrega x e fecha coiso
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+    </script>
 </body>
 </html>
