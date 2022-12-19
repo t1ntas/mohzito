@@ -1,4 +1,4 @@
-var frase = 'always' || 'Always',
+var frase = 'always', frase = 'Always',
     data = '23/07/2022',
     senha = '749123',
     nome = document.getElementById("nome").value;
