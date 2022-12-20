@@ -19,8 +19,8 @@ function change() {
     var j = 2;
 
     while(i < 100 || i > 400){
-        i = Math.floor(Math.random()*200)+1;
-        j = Math.floor(Math.random()*600)+1;
+        i = Math.floor(Math.random()*101)+1;
+        j = Math.floor(Math.random()*700)+1;
     }
 
     $("#move").css({top: j+'px', left:    i+'px'});
