@@ -10,8 +10,7 @@ var frase = 'always', frase2 = 'Always',
   
   function validar() {
     if (((document.getElementById("frase").value == frase) || (document.getElementById("frase").value == frase2) ) & (document.getElementById("data").value == data) & (document.getElementById("senha").value == senha)) {
-      alert("Boa, bem-vindo(a), " + document.getElementById("nome").value);
-      console.log(nome);
+      alert("Boa, bem-vinda(o), " + document.getElementById("nome").value);
       modifyState();
       window.location.reload();
       window.location.reload(false);      
