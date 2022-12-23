@@ -1,5 +1,5 @@
 window.onload = function() {
-    countUpFromTime("July 23, 2022 23:30:00", 'countup1');
+    countUpFromTime("July 21, 2022 23:30:00", 'countup1');
   };
   function countUpFromTime(countFrom, id) {
     countFrom = new Date(countFrom).getTime();
