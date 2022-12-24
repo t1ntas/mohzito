@@ -164,6 +164,17 @@
       </div>
       <div class="column nature">
         <div class="content">
+          <img id="myImg46" src="./img/photos/Ela/Ela12.jpg" alt="Ela" style="width:100%">
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img id="myImg47" src="./img/photos/Ela/Ela13.jpg" alt="Ela" style="width:100%">
+        </div>
+      </div>
+      <!-- Ultima Sempre-->
+      <div class="column nature">
+        <div class="content">
           <img id="myImg11" src="./img/photos/Ela/Ela8.jpg" alt="Ela" style="width:100%">
         </div>
       </div>
@@ -401,9 +412,9 @@ img42 = document.getElementById("myImg42"),
 img43 = document.getElementById("myImg43"),
 img44 = document.getElementById("myImg44"),
 img45 = document.getElementById("myImg45");
-/*img46 = document.getElementById("myImg46"),
-img47 = document.getElementById("myImg47"),
-img48 = document.getElementById("myImg48"),
+img46 = document.getElementById("myImg46"),
+img47 = document.getElementById("myImg47");
+/*img48 = document.getElementById("myImg48"),
 img49 = document.getElementById("myImg49"),
 img50 = document.getElementById("myImg50"),
 img51 = document.getElementById("myImg51"),
@@ -635,6 +646,16 @@ img44.onclick = function(){
   captionText.innerHTML = this.alt;
 }
 img45.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img46.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img47.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
